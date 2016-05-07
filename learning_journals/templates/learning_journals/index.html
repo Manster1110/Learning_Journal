@@ -1,0 +1,16 @@
+{% extends "learning_journals/base.html" %}
+
+{% block header %}
+    <div class="jumbotron">
+        <h1>Record Your Learning Progress</h1>
+    </div>
+{% endblock header %}
+
+{% block content %}
+    <h2>
+        <a href="{% url 'users:register' %}">Register an account</a> to make journal entries about your own learning progress.
+    </h2>
+    <h2>
+        When you learn something new, create a topic and make an entry.  You can continue to create entries for each topic as you learn more.  This is a great way to summarize what you have learned.
+    </h2>
+{% endblock content %}

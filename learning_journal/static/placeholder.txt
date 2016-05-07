@@ -1,0 +1,2 @@
+This file ensures that this static directory will be added to the project.  This is where
+Django will collect all the static files and place them in this directory.
