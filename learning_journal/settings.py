@@ -138,7 +138,10 @@ if os.getcwd() == '/app':
     # Honor the request is secure header
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-    ALLOWED_HOSTS = ['*']
+    # Allow only Heroku to host the app
+    ALLOWED_HOSTS = ['learning-journals.herokuapp.com']
+
+    DEBUG = False
 
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     STATIC_ROOT = 'staticfiles'
